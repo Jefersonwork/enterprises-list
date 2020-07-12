@@ -45,7 +45,6 @@ function Internal(props) {
       <Article>
         {data.photo !== null ? (
           <img
-            onError={event => event.target.remove()}
             src={`https://empresas.ioasys.com.br${data.photo}`}
             alt={data.enterprise_name}
           />
